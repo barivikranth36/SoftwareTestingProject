@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.dd.eraktkendrabackend.Service.ServiceImpl.BloodDonationRequestServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.25 s - in com.dd.eraktkendrabackend.Service.ServiceImpl.BloodDonationRequestServiceImplTest

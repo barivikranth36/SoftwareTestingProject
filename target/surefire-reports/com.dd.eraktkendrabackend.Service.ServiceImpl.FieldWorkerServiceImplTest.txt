@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.dd.eraktkendrabackend.Service.ServiceImpl.FieldWorkerServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.204 s - in com.dd.eraktkendrabackend.Service.ServiceImpl.FieldWorkerServiceImplTest

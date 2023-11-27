@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>BloodRequest.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.dd.eraktkendrabackend.Entity;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import lombok.AllArgsConstructor;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import lombok.Data;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import lombok.NoArgsConstructor;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.persistence.*;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>// ------------ This entity is ussed to keep the track of all pending blood requests ----------------</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>@Entity</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_11'/>
+11
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_11'>81</a>
+<span>
+
+1. toString : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodRequestId &rarr; NO_COVERAGE<br/>
+
+2. equals : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodBank &rarr; NO_COVERAGE<br/>
+
+3. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+4. equals : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodBank &rarr; NO_COVERAGE<br/>
+
+5. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+6. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE<br/>
+
+7. equals : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getQuantity &rarr; NO_COVERAGE<br/>
+
+8. toString : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getTotalCost &rarr; NO_COVERAGE<br/>
+
+9. toString : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodType &rarr; NO_COVERAGE<br/>
+
+10. hashCode : Replaced XOR with AND &rarr; NO_COVERAGE<br/>
+
+11. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+12. equals : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodRequestId &rarr; NO_COVERAGE<br/>
+
+13. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+14. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+15. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE<br/>
+
+16. hashCode : negated conditional &rarr; NO_COVERAGE<br/>
+
+17. hashCode : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodBank &rarr; NO_COVERAGE<br/>
+
+18. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+19. hashCode : replaced int return with 0 for com/dd/eraktkendrabackend/Entity/BloodRequest::hashCode &rarr; NO_COVERAGE<br/>
+
+20. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+21. hashCode : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodRequestId &rarr; NO_COVERAGE<br/>
+
+22. hashCode : removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE<br/>
+
+23. hashCode : Replaced Unsigned Shift Right with Shift Left &rarr; NO_COVERAGE<br/>
+
+24. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+25. equals : removed call to java/lang/Object::equals &rarr; NO_COVERAGE<br/>
+
+26. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE<br/>
+
+27. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+28. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+29. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+30. equals : removed call to java/lang/Object::equals &rarr; NO_COVERAGE<br/>
+
+31. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+32. equals : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getUser &rarr; NO_COVERAGE<br/>
+
+33. canEqual : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::canEqual &rarr; NO_COVERAGE<br/>
+
+34. equals : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getUser &rarr; NO_COVERAGE<br/>
+
+35. equals : removed call to java/lang/Object::equals &rarr; NO_COVERAGE<br/>
+
+36. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE<br/>
+
+37. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+38. equals : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodType &rarr; NO_COVERAGE<br/>
+
+39. hashCode : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getTotalCost &rarr; NO_COVERAGE<br/>
+
+40. hashCode : removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE<br/>
+
+41. equals : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getTotalCost &rarr; NO_COVERAGE<br/>
+
+42. equals : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodType &rarr; NO_COVERAGE<br/>
+
+43. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE<br/>
+
+44. hashCode : Replaced XOR with AND &rarr; NO_COVERAGE<br/>
+
+45. equals : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::canEqual &rarr; NO_COVERAGE<br/>
+
+46. toString : replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/BloodRequest::toString &rarr; NO_COVERAGE<br/>
+
+47. equals : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getTotalCost &rarr; NO_COVERAGE<br/>
+
+48. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+49. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+50. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE<br/>
+
+51. hashCode : removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE<br/>
+
+52. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE<br/>
+
+53. hashCode : negated conditional &rarr; NO_COVERAGE<br/>
+
+54. equals : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getQuantity &rarr; NO_COVERAGE<br/>
+
+55. hashCode : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getQuantity &rarr; NO_COVERAGE<br/>
+
+56. toString : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getQuantity &rarr; NO_COVERAGE<br/>
+
+57. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+58. toString : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getUser &rarr; NO_COVERAGE<br/>
+
+59. equals : replaced boolean return with false for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE<br/>
+
+60. equals : replaced boolean return with false for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE<br/>
+
+61. hashCode : Replaced Unsigned Shift Right with Shift Left &rarr; NO_COVERAGE<br/>
+
+62. equals : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodRequestId &rarr; NO_COVERAGE<br/>
+
+63. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+64. toString : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodBank &rarr; NO_COVERAGE<br/>
+
+65. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+66. hashCode : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodType &rarr; NO_COVERAGE<br/>
+
+67. hashCode : Replaced XOR with AND &rarr; NO_COVERAGE<br/>
+
+68. hashCode : Replaced Unsigned Shift Right with Shift Left &rarr; NO_COVERAGE<br/>
+
+69. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+70. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+71. hashCode : negated conditional &rarr; NO_COVERAGE<br/>
+
+72. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+73. hashCode : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getUser &rarr; NO_COVERAGE<br/>
+
+74. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+75. canEqual : replaced boolean return with false for com/dd/eraktkendrabackend/Entity/BloodRequest::canEqual &rarr; NO_COVERAGE<br/>
+
+76. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+77. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+78. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE<br/>
+
+79. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+80. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+81. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>@Data</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>@AllArgsConstructor</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>@NoArgsConstructor</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class BloodRequest {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Id</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @GeneratedValue(strategy = GenerationType.IDENTITY)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_17'/>
+17
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_17'>1</a>
+<span>
+
+1. getBloodRequestId : replaced long return with 0 for com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodRequestId &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    private long bloodRequestId;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    //One to One Mapping of user</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @OneToOne(fetch = FetchType.LAZY)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @JoinColumn(name = &#34;userId&#34;, referencedColumnName = &#34;userId&#34;)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_22'/>
+22
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_22'>1</a>
+<span>
+
+1. getUser : replaced return value with null for com/dd/eraktkendrabackend/Entity/BloodRequest::getUser &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private User user;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;blood_type&#34;, nullable = false)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_25'/>
+25
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_25'>1</a>
+<span>
+
+1. getBloodType : replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodType &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    private String bloodType;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;quantity&#34;, nullable = false)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_28'/>
+28
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_28'>1</a>
+<span>
+
+1. getQuantity : replaced long return with 0 for com/dd/eraktkendrabackend/Entity/BloodRequest::getQuantity &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    private long quantity;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;total_cost&#34;, nullable = false)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_31'/>
+31
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_31'>1</a>
+<span>
+
+1. getTotalCost : replaced long return with 0 for com/dd/eraktkendrabackend/Entity/BloodRequest::getTotalCost &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    private long totalCost;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @ManyToOne(fetch = FetchType.LAZY)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @JoinColumn(name = &#34;bankId&#34;, referencedColumnName = &#34;bloodBankId&#34;)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_35'/>
+35
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_35'>1</a>
+<span>
+
+1. getBloodBank : replaced return value with null for com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodBank &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private BloodBank bloodBank;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // -------------------------------- Constructor -------------------------------------------</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>    public BloodRequest(User user, String bloodType, long quantity, long totalCost, BloodBank bloodBank) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>        this.user = user;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>        this.bloodType = bloodType;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>        this.quantity = quantity;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>        this.totalCost = totalCost;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>        this.bloodBank = bloodBank;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1f309bad_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1f309bad_11'>11</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_11'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodRequestId &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodBank &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodBank &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getQuantity &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getTotalCost &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodType &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced XOR with AND &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodRequestId &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>13.<span><b>13</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>14.<span><b>14</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>15.<span><b>15</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>16.<span><b>16</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>17.<span><b>17</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodBank &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>18.<span><b>18</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>19.<span><b>19</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> replaced int return with 0 for com/dd/eraktkendrabackend/Entity/BloodRequest::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>20.<span><b>20</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>21.<span><b>21</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodRequestId &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>22.<span><b>22</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>23.<span><b>23</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced Unsigned Shift Right with Shift Left &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>24.<span><b>24</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>25.<span><b>25</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>26.<span><b>26</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>27.<span><b>27</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>28.<span><b>28</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>29.<span><b>29</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>30.<span><b>30</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>31.<span><b>31</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>32.<span><b>32</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getUser &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>33.<span><b>33</b><br/><b>Location : </b>canEqual<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::canEqual &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>34.<span><b>34</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getUser &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>35.<span><b>35</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>36.<span><b>36</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>37.<span><b>37</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>38.<span><b>38</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodType &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>39.<span><b>39</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getTotalCost &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>40.<span><b>40</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>41.<span><b>41</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getTotalCost &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>42.<span><b>42</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodType &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>43.<span><b>43</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>44.<span><b>44</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced XOR with AND &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>45.<span><b>45</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::canEqual &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>46.<span><b>46</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/BloodRequest::toString &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>47.<span><b>47</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getTotalCost &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>48.<span><b>48</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>49.<span><b>49</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>50.<span><b>50</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>51.<span><b>51</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>52.<span><b>52</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>53.<span><b>53</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>54.<span><b>54</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getQuantity &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>55.<span><b>55</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getQuantity &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>56.<span><b>56</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getQuantity &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>57.<span><b>57</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>58.<span><b>58</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getUser &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>59.<span><b>59</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with false for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>60.<span><b>60</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with false for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>61.<span><b>61</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced Unsigned Shift Right with Shift Left &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>62.<span><b>62</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodRequestId &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>63.<span><b>63</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>64.<span><b>64</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodBank &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>65.<span><b>65</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>66.<span><b>66</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodType &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>67.<span><b>67</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced XOR with AND &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>68.<span><b>68</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced Unsigned Shift Right with Shift Left &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>69.<span><b>69</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>70.<span><b>70</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>71.<span><b>71</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>72.<span><b>72</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>73.<span><b>73</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getUser &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>74.<span><b>74</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>75.<span><b>75</b><br/><b>Location : </b>canEqual<br/><b>Killed by : </b>none</span></span> replaced boolean return with false for com/dd/eraktkendrabackend/Entity/BloodRequest::canEqual &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>76.<span><b>76</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>77.<span><b>77</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>78.<span><b>78</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/BloodRequest::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>79.<span><b>79</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>80.<span><b>80</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>81.<span><b>81</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1f309bad_17'>17</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_17'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getBloodRequestId<br/><b>Killed by : </b>none</span></span> replaced long return with 0 for com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodRequestId &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1f309bad_22'>22</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_22'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests2()]</span></span> replaced return value with null for com/dd/eraktkendrabackend/Entity/BloodRequest::getUser &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1f309bad_25'>25</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_25'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getBloodType<br/><b>Killed by : </b>none</span></span> replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodType &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1f309bad_28'>28</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_28'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getQuantity<br/><b>Killed by : </b>none</span></span> replaced long return with 0 for com/dd/eraktkendrabackend/Entity/BloodRequest::getQuantity &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1f309bad_31'>31</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_31'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getTotalCost<br/><b>Killed by : </b>none</span></span> replaced long return with 0 for com/dd/eraktkendrabackend/Entity/BloodRequest::getTotalCost &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1f309bad_35'>35</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1f309bad_35'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getBloodBank<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests2()]</span></span> replaced return value with null for com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodBank &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>EXPERIMENTAL_ARGUMENT_PROPAGATION</li>
+
+<li class='mutator'>EXPERIMENTAL_NAKED_RECEIVER</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NON_VOID_METHOD_CALLS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests2()] (5 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testAcceptBloodRequest()] (15 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.15.3
+
+</body>
+</html>

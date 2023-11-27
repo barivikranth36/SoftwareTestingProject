@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>User.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.dd.eraktkendrabackend.Entity;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import lombok.AllArgsConstructor;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import lombok.Data;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import lombok.NoArgsConstructor;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.persistence.*;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Date;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>@Entity</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_11'/>
+11
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_11'>183</a>
+<span>
+
+1. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+2. equals : removed call to java/lang/Object::equals &rarr; NO_COVERAGE<br/>
+
+3. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getTitle &rarr; NO_COVERAGE<br/>
+
+4. hashCode : removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE<br/>
+
+5. equals : removed call to java/lang/Object::equals &rarr; NO_COVERAGE<br/>
+
+6. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getLastName &rarr; NO_COVERAGE<br/>
+
+7. toString : removed call to com/dd/eraktkendrabackend/Entity/User::getGender &rarr; SURVIVED<br/>
+
+8. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+9. equals : removed call to java/lang/Object::equals &rarr; NO_COVERAGE<br/>
+
+10. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getGender &rarr; NO_COVERAGE<br/>
+
+11. hashCode : removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE<br/>
+
+12. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+13. hashCode : removed call to com/dd/eraktkendrabackend/Entity/User::getLastName &rarr; NO_COVERAGE<br/>
+
+14. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+15. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+16. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getEmailId &rarr; NO_COVERAGE<br/>
+
+17. hashCode : negated conditional &rarr; NO_COVERAGE<br/>
+
+18. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+19. equals : removed call to java/lang/Object::equals &rarr; NO_COVERAGE<br/>
+
+20. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getAddress &rarr; NO_COVERAGE<br/>
+
+21. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+22. hashCode : negated conditional &rarr; NO_COVERAGE<br/>
+
+23. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+24. hashCode : removed call to com/dd/eraktkendrabackend/Entity/User::getAddress &rarr; NO_COVERAGE<br/>
+
+25. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getPincode &rarr; NO_COVERAGE<br/>
+
+26. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+27. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+28. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+29. toString : removed call to com/dd/eraktkendrabackend/Entity/User::getDob &rarr; SURVIVED<br/>
+
+30. hashCode : removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE<br/>
+
+31. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+32. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+33. toString : replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::toString &rarr; SURVIVED<br/>
+
+34. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+35. canEqual : replaced boolean return with false for com/dd/eraktkendrabackend/Entity/User::canEqual &rarr; NO_COVERAGE<br/>
+
+36. hashCode : negated conditional &rarr; NO_COVERAGE<br/>
+
+37. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+38. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+39. toString : removed call to com/dd/eraktkendrabackend/Entity/User::getCredit &rarr; SURVIVED<br/>
+
+40. equals : replaced boolean return with false for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+41. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+42. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+43. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getPincode &rarr; NO_COVERAGE<br/>
+
+44. equals : removed call to java/lang/Object::equals &rarr; NO_COVERAGE<br/>
+
+45. hashCode : removed call to com/dd/eraktkendrabackend/Entity/User::getDob &rarr; NO_COVERAGE<br/>
+
+46. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+47. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+48. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+49. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+50. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+51. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+52. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+53. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+54. hashCode : removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE<br/>
+
+55. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+56. hashCode : removed call to com/dd/eraktkendrabackend/Entity/User::getTitle &rarr; NO_COVERAGE<br/>
+
+57. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+58. hashCode : Replaced XOR with AND &rarr; NO_COVERAGE<br/>
+
+59. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+60. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getDob &rarr; NO_COVERAGE<br/>
+
+61. toString : removed call to com/dd/eraktkendrabackend/Entity/User::getLastName &rarr; SURVIVED<br/>
+
+62. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getFirstName &rarr; NO_COVERAGE<br/>
+
+63. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getPhoneNumber &rarr; NO_COVERAGE<br/>
+
+64. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+65. toString : removed call to com/dd/eraktkendrabackend/Entity/User::getPincode &rarr; SURVIVED<br/>
+
+66. hashCode : removed call to com/dd/eraktkendrabackend/Entity/User::getPassword &rarr; NO_COVERAGE<br/>
+
+67. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+68. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getPassword &rarr; NO_COVERAGE<br/>
+
+69. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+70. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+71. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+72. equals : removed call to com/dd/eraktkendrabackend/Entity/User::canEqual &rarr; NO_COVERAGE<br/>
+
+73. hashCode : removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE<br/>
+
+74. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getAddress &rarr; NO_COVERAGE<br/>
+
+75. hashCode : Replaced XOR with AND &rarr; NO_COVERAGE<br/>
+
+76. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+77. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+78. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+79. hashCode : Replaced Unsigned Shift Right with Shift Left &rarr; NO_COVERAGE<br/>
+
+80. toString : removed call to com/dd/eraktkendrabackend/Entity/User::getFirstName &rarr; SURVIVED<br/>
+
+81. hashCode : removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE<br/>
+
+82. hashCode : negated conditional &rarr; NO_COVERAGE<br/>
+
+83. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+84. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+85. hashCode : removed call to com/dd/eraktkendrabackend/Entity/User::getFirstName &rarr; NO_COVERAGE<br/>
+
+86. hashCode : negated conditional &rarr; NO_COVERAGE<br/>
+
+87. toString : removed call to com/dd/eraktkendrabackend/Entity/User::getCity &rarr; SURVIVED<br/>
+
+88. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+89. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+90. hashCode : removed call to com/dd/eraktkendrabackend/Entity/User::getBloodType &rarr; NO_COVERAGE<br/>
+
+91. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+92. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+93. hashCode : Replaced Unsigned Shift Right with Shift Left &rarr; NO_COVERAGE<br/>
+
+94. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+95. equals : removed call to java/lang/Object::equals &rarr; NO_COVERAGE<br/>
+
+96. hashCode : negated conditional &rarr; NO_COVERAGE<br/>
+
+97. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+98. toString : removed call to com/dd/eraktkendrabackend/Entity/User::getTitle &rarr; SURVIVED<br/>
+
+99. hashCode : removed call to com/dd/eraktkendrabackend/Entity/User::getPhoneNumber &rarr; NO_COVERAGE<br/>
+
+100. hashCode : removed call to com/dd/eraktkendrabackend/Entity/User::getCredit &rarr; NO_COVERAGE<br/>
+
+101. hashCode : removed call to com/dd/eraktkendrabackend/Entity/User::getUserId &rarr; NO_COVERAGE<br/>
+
+102. equals : removed call to java/lang/Object::equals &rarr; NO_COVERAGE<br/>
+
+103. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getFirstName &rarr; NO_COVERAGE<br/>
+
+104. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+105. toString : removed call to com/dd/eraktkendrabackend/Entity/User::getAddress &rarr; SURVIVED<br/>
+
+106. hashCode : removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE<br/>
+
+107. equals : removed call to java/lang/Object::equals &rarr; NO_COVERAGE<br/>
+
+108. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+109. equals : removed call to java/lang/Object::equals &rarr; NO_COVERAGE<br/>
+
+110. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getDob &rarr; NO_COVERAGE<br/>
+
+111. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+112. equals : removed call to java/lang/Object::equals &rarr; NO_COVERAGE<br/>
+
+113. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getPassword &rarr; NO_COVERAGE<br/>
+
+114. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getPhoneNumber &rarr; NO_COVERAGE<br/>
+
+115. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+116. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getCredit &rarr; NO_COVERAGE<br/>
+
+117. hashCode : removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE<br/>
+
+118. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getUserId &rarr; NO_COVERAGE<br/>
+
+119. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+120. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+121. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+122. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+123. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+124. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getBloodType &rarr; NO_COVERAGE<br/>
+
+125. toString : removed call to com/dd/eraktkendrabackend/Entity/User::getUserId &rarr; SURVIVED<br/>
+
+126. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+127. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+128. hashCode : negated conditional &rarr; NO_COVERAGE<br/>
+
+129. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getCity &rarr; NO_COVERAGE<br/>
+
+130. hashCode : removed call to com/dd/eraktkendrabackend/Entity/User::getEmailId &rarr; NO_COVERAGE<br/>
+
+131. toString : removed call to com/dd/eraktkendrabackend/Entity/User::getBloodType &rarr; SURVIVED<br/>
+
+132. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+133. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+134. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+135. hashCode : removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE<br/>
+
+136. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+137. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+138. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+139. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+140. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+141. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getCredit &rarr; NO_COVERAGE<br/>
+
+142. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+143. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getUserId &rarr; NO_COVERAGE<br/>
+
+144. equals : replaced boolean return with false for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+145. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getTitle &rarr; NO_COVERAGE<br/>
+
+146. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+147. hashCode : negated conditional &rarr; NO_COVERAGE<br/>
+
+148. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getLastName &rarr; NO_COVERAGE<br/>
+
+149. hashCode : removed call to com/dd/eraktkendrabackend/Entity/User::getCity &rarr; NO_COVERAGE<br/>
+
+150. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+151. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+152. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+153. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+154. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+155. toString : removed call to com/dd/eraktkendrabackend/Entity/User::getEmailId &rarr; SURVIVED<br/>
+
+156. toString : removed call to com/dd/eraktkendrabackend/Entity/User::getPassword &rarr; SURVIVED<br/>
+
+157. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+158. hashCode : removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE<br/>
+
+159. canEqual : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::canEqual &rarr; NO_COVERAGE<br/>
+
+160. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+161. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+162. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getGender &rarr; NO_COVERAGE<br/>
+
+163. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+164. hashCode : negated conditional &rarr; NO_COVERAGE<br/>
+
+165. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+166. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getEmailId &rarr; NO_COVERAGE<br/>
+
+167. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+168. equals : negated conditional &rarr; NO_COVERAGE<br/>
+
+169. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+170. hashCode : negated conditional &rarr; NO_COVERAGE<br/>
+
+171. hashCode : removed call to com/dd/eraktkendrabackend/Entity/User::getGender &rarr; NO_COVERAGE<br/>
+
+172. equals : removed call to java/lang/Object::equals &rarr; NO_COVERAGE<br/>
+
+173. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getBloodType &rarr; NO_COVERAGE<br/>
+
+174. equals : replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE<br/>
+
+175. hashCode : negated conditional &rarr; NO_COVERAGE<br/>
+
+176. toString : removed call to com/dd/eraktkendrabackend/Entity/User::getPhoneNumber &rarr; SURVIVED<br/>
+
+177. equals : removed call to com/dd/eraktkendrabackend/Entity/User::getCity &rarr; NO_COVERAGE<br/>
+
+178. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+179. hashCode : removed call to com/dd/eraktkendrabackend/Entity/User::getPincode &rarr; NO_COVERAGE<br/>
+
+180. hashCode : Replaced integer multiplication with division &rarr; NO_COVERAGE<br/>
+
+181. hashCode : removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE<br/>
+
+182. hashCode : replaced int return with 0 for com/dd/eraktkendrabackend/Entity/User::hashCode &rarr; NO_COVERAGE<br/>
+
+183. hashCode : Replaced integer addition with subtraction &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>@Data</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>@AllArgsConstructor</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>@NoArgsConstructor</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class User {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Id</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @GeneratedValue(strategy = GenerationType.IDENTITY)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_17'/>
+17
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_17'>1</a>
+<span>
+
+1. getUserId : replaced long return with 0 for com/dd/eraktkendrabackend/Entity/User::getUserId &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private long userId;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;title&#34; , nullable = false)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_20'/>
+20
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_20'>1</a>
+<span>
+
+1. getTitle : replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getTitle &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private String title;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;first_name&#34;, nullable = false)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_23'/>
+23
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_23'>1</a>
+<span>
+
+1. getFirstName : replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getFirstName &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private String firstName;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;last_name&#34;, nullable = false)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_26'/>
+26
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_26'>1</a>
+<span>
+
+1. getLastName : replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getLastName &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private String lastName;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;dob&#34;, nullable = false)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Temporal(TemporalType.DATE)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_30'/>
+30
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_30'>1</a>
+<span>
+
+1. getDob : replaced return value with null for com/dd/eraktkendrabackend/Entity/User::getDob &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private Date dob;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;gender&#34;, nullable = false)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_33'/>
+33
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_33'>1</a>
+<span>
+
+1. getGender : replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getGender &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private String gender;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;phone_number&#34;, nullable = false)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_36'/>
+36
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_36'>1</a>
+<span>
+
+1. getPhoneNumber : replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getPhoneNumber &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private String phoneNumber;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;emailId&#34;, nullable = false, unique = true)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_39'/>
+39
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_39'>1</a>
+<span>
+
+1. getEmailId : replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getEmailId &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private String emailId;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;password&#34;, nullable = false)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_42'/>
+42
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_42'>1</a>
+<span>
+
+1. getPassword : replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getPassword &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private String password;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;blood_type&#34;,nullable = false)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_45'/>
+45
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_45'>1</a>
+<span>
+
+1. getBloodType : replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getBloodType &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private String bloodType;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;address&#34;, nullable = false)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_48'/>
+48
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_48'>1</a>
+<span>
+
+1. getAddress : replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getAddress &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private String address;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;city&#34;,nullable = false)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_51'/>
+51
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_51'>1</a>
+<span>
+
+1. getCity : replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getCity &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private String city;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;pincode&#34;, nullable = false)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_54'/>
+54
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_54'>1</a>
+<span>
+
+1. getPincode : replaced long return with 0 for com/dd/eraktkendrabackend/Entity/User::getPincode &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private long pincode;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Column(name = &#34;credit&#34;, columnDefinition = &#34;int default 0&#34;)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>//    @ColumnDefault(&#34;0&#34;)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_58'/>
+58
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_58'>1</a>
+<span>
+
+1. getCredit : replaced int return with 0 for com/dd/eraktkendrabackend/Entity/User::getCredit &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    private int credit;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2d736f2c_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_11'>11</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_11'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getTitle &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getLastName &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getGender &rarr; SURVIVED</p> <p class='NO_COVERAGE'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getGender &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>13.<span><b>13</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getLastName &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>14.<span><b>14</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>15.<span><b>15</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>16.<span><b>16</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getEmailId &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>17.<span><b>17</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>18.<span><b>18</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>19.<span><b>19</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>20.<span><b>20</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getAddress &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>21.<span><b>21</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>22.<span><b>22</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>23.<span><b>23</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>24.<span><b>24</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getAddress &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>25.<span><b>25</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getPincode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>26.<span><b>26</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>27.<span><b>27</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>28.<span><b>28</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>29.<span><b>29</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getDob &rarr; SURVIVED</p> <p class='NO_COVERAGE'><span class='pop'>30.<span><b>30</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>31.<span><b>31</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>32.<span><b>32</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>33.<span><b>33</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::toString &rarr; SURVIVED</p> <p class='NO_COVERAGE'><span class='pop'>34.<span><b>34</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>35.<span><b>35</b><br/><b>Location : </b>canEqual<br/><b>Killed by : </b>none</span></span> replaced boolean return with false for com/dd/eraktkendrabackend/Entity/User::canEqual &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>36.<span><b>36</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>37.<span><b>37</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>38.<span><b>38</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>39.<span><b>39</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getCredit &rarr; SURVIVED</p> <p class='NO_COVERAGE'><span class='pop'>40.<span><b>40</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with false for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>41.<span><b>41</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>42.<span><b>42</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>43.<span><b>43</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getPincode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>44.<span><b>44</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>45.<span><b>45</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getDob &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>46.<span><b>46</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>47.<span><b>47</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>48.<span><b>48</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>49.<span><b>49</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>50.<span><b>50</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>51.<span><b>51</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>52.<span><b>52</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>53.<span><b>53</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>54.<span><b>54</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>55.<span><b>55</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>56.<span><b>56</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getTitle &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>57.<span><b>57</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>58.<span><b>58</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced XOR with AND &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>59.<span><b>59</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>60.<span><b>60</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getDob &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>61.<span><b>61</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getLastName &rarr; SURVIVED</p> <p class='NO_COVERAGE'><span class='pop'>62.<span><b>62</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getFirstName &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>63.<span><b>63</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getPhoneNumber &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>64.<span><b>64</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>65.<span><b>65</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getPincode &rarr; SURVIVED</p> <p class='NO_COVERAGE'><span class='pop'>66.<span><b>66</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getPassword &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>67.<span><b>67</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>68.<span><b>68</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getPassword &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>69.<span><b>69</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>70.<span><b>70</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>71.<span><b>71</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>72.<span><b>72</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::canEqual &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>73.<span><b>73</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>74.<span><b>74</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getAddress &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>75.<span><b>75</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced XOR with AND &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>76.<span><b>76</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>77.<span><b>77</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>78.<span><b>78</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>79.<span><b>79</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced Unsigned Shift Right with Shift Left &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>80.<span><b>80</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getFirstName &rarr; SURVIVED</p> <p class='NO_COVERAGE'><span class='pop'>81.<span><b>81</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>82.<span><b>82</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>83.<span><b>83</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>84.<span><b>84</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>85.<span><b>85</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getFirstName &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>86.<span><b>86</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>87.<span><b>87</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getCity &rarr; SURVIVED</p> <p class='NO_COVERAGE'><span class='pop'>88.<span><b>88</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>89.<span><b>89</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>90.<span><b>90</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getBloodType &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>91.<span><b>91</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>92.<span><b>92</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>93.<span><b>93</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced Unsigned Shift Right with Shift Left &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>94.<span><b>94</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>95.<span><b>95</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>96.<span><b>96</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>97.<span><b>97</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>98.<span><b>98</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getTitle &rarr; SURVIVED</p> <p class='NO_COVERAGE'><span class='pop'>99.<span><b>99</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getPhoneNumber &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>100.<span><b>100</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getCredit &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>101.<span><b>101</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getUserId &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>102.<span><b>102</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>103.<span><b>103</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getFirstName &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>104.<span><b>104</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>105.<span><b>105</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getAddress &rarr; SURVIVED</p> <p class='NO_COVERAGE'><span class='pop'>106.<span><b>106</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>107.<span><b>107</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>108.<span><b>108</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>109.<span><b>109</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>110.<span><b>110</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getDob &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>111.<span><b>111</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>112.<span><b>112</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>113.<span><b>113</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getPassword &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>114.<span><b>114</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getPhoneNumber &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>115.<span><b>115</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>116.<span><b>116</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getCredit &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>117.<span><b>117</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>118.<span><b>118</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getUserId &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>119.<span><b>119</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>120.<span><b>120</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>121.<span><b>121</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>122.<span><b>122</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>123.<span><b>123</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>124.<span><b>124</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getBloodType &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>125.<span><b>125</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getUserId &rarr; SURVIVED</p> <p class='NO_COVERAGE'><span class='pop'>126.<span><b>126</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>127.<span><b>127</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>128.<span><b>128</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>129.<span><b>129</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getCity &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>130.<span><b>130</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getEmailId &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>131.<span><b>131</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getBloodType &rarr; SURVIVED</p> <p class='NO_COVERAGE'><span class='pop'>132.<span><b>132</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>133.<span><b>133</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>134.<span><b>134</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>135.<span><b>135</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>136.<span><b>136</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>137.<span><b>137</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>138.<span><b>138</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>139.<span><b>139</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>140.<span><b>140</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>141.<span><b>141</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getCredit &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>142.<span><b>142</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>143.<span><b>143</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getUserId &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>144.<span><b>144</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with false for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>145.<span><b>145</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getTitle &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>146.<span><b>146</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>147.<span><b>147</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>148.<span><b>148</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getLastName &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>149.<span><b>149</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getCity &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>150.<span><b>150</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>151.<span><b>151</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>152.<span><b>152</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>153.<span><b>153</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>154.<span><b>154</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>155.<span><b>155</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getEmailId &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>156.<span><b>156</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getPassword &rarr; SURVIVED</p> <p class='NO_COVERAGE'><span class='pop'>157.<span><b>157</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>158.<span><b>158</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>159.<span><b>159</b><br/><b>Location : </b>canEqual<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::canEqual &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>160.<span><b>160</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>161.<span><b>161</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>162.<span><b>162</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getGender &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>163.<span><b>163</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>164.<span><b>164</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>165.<span><b>165</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>166.<span><b>166</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getEmailId &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>167.<span><b>167</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>168.<span><b>168</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>169.<span><b>169</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>170.<span><b>170</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>171.<span><b>171</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getGender &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>172.<span><b>172</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>173.<span><b>173</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getBloodType &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>174.<span><b>174</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Entity/User::equals &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>175.<span><b>175</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='SURVIVED'><span class='pop'>176.<span><b>176</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getPhoneNumber &rarr; SURVIVED</p> <p class='NO_COVERAGE'><span class='pop'>177.<span><b>177</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getCity &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>178.<span><b>178</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>179.<span><b>179</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getPincode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>180.<span><b>180</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>181.<span><b>181</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Object::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>182.<span><b>182</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> replaced int return with 0 for com/dd/eraktkendrabackend/Entity/User::hashCode &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>183.<span><b>183</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_17'>17</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_17'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getUserId<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodDonationRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodDonationRequestServiceImplTest]/[method:testGetBloodDonationHistory2()]</span></span> replaced long return with 0 for com/dd/eraktkendrabackend/Entity/User::getUserId &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_20'>20</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_20'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getTitle<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Controller.UserControllerTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Controller.UserControllerTest]/[method:testAddUser()]</span></span> replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getTitle &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_23'>23</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_23'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getFirstName<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Controller.UserControllerTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Controller.UserControllerTest]/[method:testAddUser()]</span></span> replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getFirstName &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_26'>26</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_26'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getLastName<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Controller.UserControllerTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Controller.UserControllerTest]/[method:testAddUser()]</span></span> replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getLastName &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_30'>30</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_30'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getDob<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Controller.UserControllerTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Controller.UserControllerTest]/[method:testAddUser()]</span></span> replaced return value with null for com/dd/eraktkendrabackend/Entity/User::getDob &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_33'>33</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_33'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getGender<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Controller.UserControllerTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Controller.UserControllerTest]/[method:testAddUser()]</span></span> replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getGender &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_36'>36</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_36'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getPhoneNumber<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Controller.UserControllerTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Controller.UserControllerTest]/[method:testAddUser()]</span></span> replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getPhoneNumber &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_39'>39</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_39'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getEmailId<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Controller.UserControllerTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Controller.UserControllerTest]/[method:testAddUser()]</span></span> replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getEmailId &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_42'>42</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_42'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getPassword<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.UserServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.UserServiceImplTest]/[method:testUserLogin()]</span></span> replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getPassword &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_45'>45</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_45'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getBloodType<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Controller.UserControllerTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Controller.UserControllerTest]/[method:testAddUser()]</span></span> replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getBloodType &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_48'>48</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_48'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getAddress<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Controller.UserControllerTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Controller.UserControllerTest]/[method:testAddUser()]</span></span> replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getAddress &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_51'>51</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_51'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCity<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Controller.UserControllerTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Controller.UserControllerTest]/[method:testAddUser()]</span></span> replaced return value with &#34;&#34; for com/dd/eraktkendrabackend/Entity/User::getCity &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_54'>54</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_54'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getPincode<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Controller.UserControllerTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Controller.UserControllerTest]/[method:testAddUser()]</span></span> replaced long return with 0 for com/dd/eraktkendrabackend/Entity/User::getPincode &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2d736f2c_58'>58</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2d736f2c_58'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCredit<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Controller.UserControllerTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Controller.UserControllerTest]/[method:testAddUser()]</span></span> replaced int return with 0 for com/dd/eraktkendrabackend/Entity/User::getCredit &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>EXPERIMENTAL_ARGUMENT_PROPAGATION</li>
+
+<li class='mutator'>EXPERIMENTAL_NAKED_RECEIVER</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NON_VOID_METHOD_CALLS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.dd.eraktkendrabackend.Service.ServiceImpl.UserServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.UserServiceImplTest]/[method:testUserLogin()] (7 ms)</li><li>com.dd.eraktkendrabackend.Controller.UserControllerTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Controller.UserControllerTest]/[method:testAddUser()] (33 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests2()] (5 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodDonationRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodDonationRequestServiceImplTest]/[method:testGetBloodDonationHistory2()] (6 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodDonationRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodDonationRequestServiceImplTest]/[method:testGetAllBloodDonationRequests2()] (6 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodDonationRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodDonationRequestServiceImplTest]/[method:testGetBloodDonationHistory3()] (66 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests3()] (65 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodDonationRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodDonationRequestServiceImplTest]/[method:testAcceptBloodDonationRequest()] (18 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.15.3
+
+</body>
+</html>
