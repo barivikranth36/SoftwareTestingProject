@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.10</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.dd</groupId>
+    <artifactId>E-RaktKendraBackend</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>E-RaktKendraBackend</name>
+    <description>E-RaktKendraBackend</description>
+    <properties>
+        <java.version>11</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+<!--        PITest dependency-->
+        <dependency>
+            <groupId>org.pitest</groupId>
+            <artifactId>pitest-junit5-plugin</artifactId>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
+            <!--        PITest plugin-->
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>1.15.3</version>
+                <configuration>
+                    <targetClasses>
+                        <param>com.dd.eraktkendrabackend.Controller.BloodDonationController</param>
+                        <param>com.dd.eraktkendrabackend.Controller.BloodRequestController</param>
+                        <param>com.dd.eraktkendrabackend.Controller.Calculator</param>
+                        <param>com.dd.eraktkendrabackend.Controller.FieldWorkerController</param>
+                        <param>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodBankServiceImpl</param>
+                        <param>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodDonationRequestServiceImpl</param>
+                        <param>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRecordServiceImpl</param>
+                        <param>com.dd.eraktkendrabackend.Service.ServiceImpl.CityServiceImpl</param>
+                        <param>com.dd.eraktkendrabackend.Service.ServiceImpl.FieldWorkerServiceImpl</param>
+                        <param>com.dd.eraktkendrabackend.Service.ServiceImpl.UserServiceImpl</param>
+                        <param>com.dd.eraktkendrabackend.Algorithms.*</param>
+                    </targetClasses>
+                    <mutators>
+                        <mutator>CONDITIONALS_BOUNDARY</mutator>
+                        <mutator>EMPTY_RETURNS</mutator>
+                        <mutator>FALSE_RETURNS</mutator>
+                        <mutator>INCREMENTS</mutator>
+                        <mutator>INVERT_NEGS</mutator>
+                        <mutator>MATH</mutator>
+                        <mutator>NEGATE_CONDITIONALS</mutator>
+                        <mutator>NULL_RETURNS</mutator>
+                        <mutator>PRIMITIVE_RETURNS</mutator>
+                        <mutator>TRUE_RETURNS</mutator>
+                        <mutator>VOID_METHOD_CALLS</mutator>
+
+                        <mutator>NON_VOID_METHOD_CALLS</mutator>
+                        <mutator>EXPERIMENTAL_ARGUMENT_PROPAGATION</mutator>
+                        <mutator>EXPERIMENTAL_NAKED_RECEIVER</mutator>
+                    </mutators>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
