@@ -1,0 +1,15 @@
+com\dd\eraktkendrabackend\Controller\BloodDonationControllerTest.class
+com\dd\eraktkendrabackend\Service\ServiceImpl\BloodDonationRequestServiceImplTest.class
+com\dd\eraktkendrabackend\Service\ServiceImpl\BloodRequestServiceImplTest.class
+com\dd\eraktkendrabackend\Service\ServiceImpl\FieldWorkerServiceImplTest.class
+com\dd\eraktkendrabackend\Service\ServiceImpl\BloodBankServiceImplTest.class
+com\dd\eraktkendrabackend\Controller\BloodBankControllerTest.class
+com\dd\eraktkendrabackend\Controller\BloodRecordControllerTest.class
+com\dd\eraktkendrabackend\ERaktKendraBackendApplicationTests.class
+com\dd\eraktkendrabackend\Service\ServiceImpl\UserServiceImplTest.class
+com\dd\eraktkendrabackend\Controller\FieldWorkerControllerTest.class
+com\dd\eraktkendrabackend\Controller\CalculatorTest.class
+com\dd\eraktkendrabackend\Controller\BloodRequestControllerTest.class
+com\dd\eraktkendrabackend\Service\ServiceImpl\BloodRecordServiceImplTest.class
+com\dd\eraktkendrabackend\Service\ServiceImpl\CityServiceImplTest.class
+com\dd\eraktkendrabackend\Controller\UserControllerTest.class

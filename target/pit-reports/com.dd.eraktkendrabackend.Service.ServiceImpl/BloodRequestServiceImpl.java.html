@@ -1,0 +1,3184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>BloodRequestServiceImpl.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.dd.eraktkendrabackend.Service.ServiceImpl;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.dd.eraktkendrabackend.DTO.BloodRecordDTO;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.dd.eraktkendrabackend.DTO.BloodRequestDTO;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.dd.eraktkendrabackend.Entity.*;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.dd.eraktkendrabackend.Repository.*;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.dd.eraktkendrabackend.Service.BloodRecordService;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.dd.eraktkendrabackend.Service.BloodRequestService;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.slf4j.Logger;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.slf4j.LoggerFactory;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.springframework.beans.factory.annotation.Autowired;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.springframework.stereotype.Service;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.ArrayList;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>@Service</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>public class BloodRequestServiceImpl implements BloodRequestService {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private static final Logger logger = LoggerFactory.getLogger(BloodRequestServiceImpl.class);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Autowired</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private BloodRecordService bloodRecordService;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Autowired</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private BloodRecordRepository bloodRecordRepository;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Autowired</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private UserRepository userRepository;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Autowired</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private BloodRequestRepository bloodRequestRepository;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Autowired</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private BloodBankRepository bloodBankRepository;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Autowired</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private BloodRequestRecordRepository bloodRequestRecordRepository;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean bloodRequestByUser(BloodRequestDTO bloodRequestDTO) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        logger.info(&#34;User is requesting for some blood units...&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_43'/>
+43
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_43'>1</a>
+<span>
+
+1. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/Service/BloodRecordService::getBloodRecord &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        List&#60;BloodRecordDTO&#62; bloodRecordDTOList = bloodRecordService.getBloodRecord(bloodRequestDTO</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_44'/>
+44
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_44'>1</a>
+<span>
+
+1. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getBloodBankId &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                .getBloodBankId());</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_46'/>
+46
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_46'>4</a>
+<span>
+
+1. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getBloodBankId &rarr; SURVIVED<br/>
+
+2. bloodRequestByUser : removed call to java/lang/Long::valueOf &rarr; SURVIVED<br/>
+
+3. bloodRequestByUser : removed call to java/util/Optional::get &rarr; SURVIVED<br/>
+
+4. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/Repository/BloodBankRepository::findById &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        BloodBank bloodBank = bloodBankRepository.findById(bloodRequestDTO.getBloodBankId()).get();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_48'/>
+48
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_48'>4</a>
+<span>
+
+1. bloodRequestByUser : removed call to java/util/Optional::get &rarr; SURVIVED<br/>
+
+2. bloodRequestByUser : removed call to java/lang/Long::valueOf &rarr; SURVIVED<br/>
+
+3. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/Repository/UserRepository::findById &rarr; KILLED<br/>
+
+4. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getUserId &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        User user = userRepository.findById(bloodRequestDTO.getUserId()).get();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        BloodRequest bloodRequest;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        long totalCost = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for(BloodRecordDTO bloodRecordDTO: bloodRecordDTOList) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_54'/>
+54
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_54'>4</a>
+<span>
+
+1. bloodRequestByUser : removed call to java/lang/String::equals &rarr; SURVIVED<br/>
+
+2. bloodRequestByUser : negated conditional &rarr; KILLED<br/>
+
+3. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/DTO/BloodRecordDTO::getBloodType &rarr; KILLED<br/>
+
+4. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getBloodType &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if((bloodRecordDTO.getBloodType().equals(bloodRequestDTO.getBloodType())) &#38;&#38;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_55'/>
+55
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_55'>4</a>
+<span>
+
+1. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/DTO/BloodRecordDTO::getQuantity &rarr; NO_COVERAGE<br/>
+
+2. bloodRequestByUser : negated conditional &rarr; NO_COVERAGE<br/>
+
+3. bloodRequestByUser : changed conditional boundary &rarr; NO_COVERAGE<br/>
+
+4. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getQuantity &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>                    (bloodRecordDTO.getQuantity() &#62;= bloodRequestDTO.getQuantity())) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_57'/>
+57
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_57'>3</a>
+<span>
+
+1. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getQuantity &rarr; NO_COVERAGE<br/>
+
+2. bloodRequestByUser : Replaced long multiplication with division &rarr; NO_COVERAGE<br/>
+
+3. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/DTO/BloodRecordDTO::getCostPerUnit &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>                totalCost = bloodRequestDTO.getQuantity() * bloodRecordDTO.getCostPerUnit();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>                bloodRequest = new BloodRequest(</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                        user,</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_61'/>
+61
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_61'>1</a>
+<span>
+
+1. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getBloodType &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>                        bloodRequestDTO.getBloodType(),</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_62'/>
+62
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_62'>1</a>
+<span>
+
+1. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getQuantity &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>                        bloodRequestDTO.getQuantity(),</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                        totalCost,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                        bloodBank</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_65'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                );</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_66'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_67'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                // Saving to blood request table</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_68'/>
+68
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_68'>2</a>
+<span>
+
+1. bloodRequestByUser : replaced call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::save with argument &rarr; NO_COVERAGE<br/>
+
+2. bloodRequestByUser : removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::save &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>                bloodRequestRepository.save(bloodRequest);</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>                logger.info(&#34;Successfully got the blood request...&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_70'/>
+70
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_70'>1</a>
+<span>
+
+1. bloodRequestByUser : replaced boolean return with false for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::bloodRequestByUser &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>                return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_72'/>
+72
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_72'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        logger.info(&#34;requested blood unit is not present in the blood bank...&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_74'/>
+74
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_74'>1</a>
+<span>
+
+1. bloodRequestByUser : replaced boolean return with true for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::bloodRequestByUser &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_75'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_76'/>
+76
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_76'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_77'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_78'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean checkBloodRequest(long userId) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        logger.info(&#34;User checking if he/she already has a blood request or not...&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_80'/>
+80
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_80'>1</a>
+<span>
+
+1. checkBloodRequest : removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::findBloodRequestByUser_UserId &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        BloodRequest bloodRequest = bloodRequestRepository.findBloodRequestByUser_UserId(userId);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_81'/>
+81
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_81'>1</a>
+<span>
+
+1. checkBloodRequest : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if(bloodRequest == null)</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_82'/>
+82
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_82'>1</a>
+<span>
+
+1. checkBloodRequest : replaced boolean return with true for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::checkBloodRequest &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>            return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_83'/>
+83
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_83'>1</a>
+<span>
+
+1. checkBloodRequest : replaced boolean return with false for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::checkBloodRequest &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        else return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_84'/>
+84
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_84'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_85'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_86'/>
+86
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_86'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_87'/>
+87
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_87'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean revokeBloodRequest(long userId) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_88'/>
+88
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_88'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        logger.info(&#34;Deleting blood request...&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_89'/>
+89
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_89'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        try {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_90'/>
+90
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_90'>1</a>
+<span>
+
+1. revokeBloodRequest : removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::findBloodRequestByUser_UserId &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            BloodRequest bloodRequest = bloodRequestRepository.findBloodRequestByUser_UserId(userId);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_91'/>
+91
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_91'>1</a>
+<span>
+
+1. revokeBloodRequest : removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::delete &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            bloodRequestRepository.delete(bloodRequest);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_92'/>
+92
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_92'>1</a>
+<span>
+
+1. revokeBloodRequest : replaced boolean return with false for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::revokeBloodRequest &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_93'/>
+93
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_93'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>        } catch (Exception e) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_94'/>
+94
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_94'>1</a>
+<span>
+
+1. revokeBloodRequest : removed call to java/lang/Exception::printStackTrace &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>            e.printStackTrace();</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_95'/>
+95
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_95'>1</a>
+<span>
+
+1. revokeBloodRequest : replaced boolean return with true for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::revokeBloodRequest &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>            return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_96'/>
+96
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_96'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_97'/>
+97
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_97'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_98'/>
+98
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_98'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_99'/>
+99
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_99'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_100'/>
+100
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_100'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean acceptBloodRequest(long bloodRequestId) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_101'/>
+101
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_101'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        logger.info(&#34;Fieldworker accepting blood request...&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_102'/>
+102
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_102'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>         /* - Create object of BloodRequestRecord class and fill the values.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_103'/>
+103
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_103'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            - Remove the entry from BloodRequest table</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_104'/>
+104
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_104'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            - decrease the quantity of blood in blood record of that bloodbank</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_105'/>
+105
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_105'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>         */</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_106'/>
+106
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_106'>3</a>
+<span>
+
+1. acceptBloodRequest : removed call to java/lang/Long::valueOf &rarr; SURVIVED<br/>
+
+2. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::findById &rarr; KILLED<br/>
+
+3. acceptBloodRequest : removed call to java/util/Optional::get &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        BloodRequest bloodRequest = bloodRequestRepository.findById(bloodRequestId).get();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_107'/>
+107
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_107'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_108'/>
+108
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_108'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        BloodRequestRecord bloodRequestRecord = new BloodRequestRecord(</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_109'/>
+109
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_109'>1</a>
+<span>
+
+1. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getUser &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                bloodRequest.getUser(),</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_110'/>
+110
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_110'>1</a>
+<span>
+
+1. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodType &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                bloodRequest.getBloodType(),</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_111'/>
+111
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_111'>1</a>
+<span>
+
+1. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getQuantity &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                bloodRequest.getQuantity(),</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_112'/>
+112
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_112'>1</a>
+<span>
+
+1. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getTotalCost &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                bloodRequest.getTotalCost(),</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_113'/>
+113
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_113'>2</a>
+<span>
+
+1. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Entity/BloodBank::getBloodBankId &rarr; SURVIVED<br/>
+
+2. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodBank &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                bloodRequest.getBloodBank().getBloodBankId()</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_114'/>
+114
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_114'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        );</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_115'/>
+115
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_115'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_116'/>
+116
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_116'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        try {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_117'/>
+117
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_117'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            // Deleting record from Blood request table</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_118'/>
+118
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_118'>1</a>
+<span>
+
+1. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::delete &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            bloodRequestRepository.delete(bloodRequest);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_119'/>
+119
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_119'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_120'/>
+120
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_120'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            // Saving blood request record to database</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_121'/>
+121
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_121'>2</a>
+<span>
+
+1. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRecordRepository::save &rarr; KILLED<br/>
+
+2. acceptBloodRequest : replaced call to com/dd/eraktkendrabackend/Repository/BloodRequestRecordRepository::save with argument &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            bloodRequestRecordRepository.save(bloodRequestRecord);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_122'/>
+122
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_122'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_123'/>
+123
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_123'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            // Decrementing from Blood record table</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_124'/>
+124
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_124'>1</a>
+<span>
+
+1. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Repository/BloodRecordRepository::findBloodRecordByBloodBank_BloodBankIdAndAndBloodType &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            BloodRecord bloodRecord = bloodRecordRepository.findBloodRecordByBloodBank_BloodBankIdAndAndBloodType(</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_125'/>
+125
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_125'>1</a>
+<span>
+
+1. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Entity/BloodRequestRecord::getBankId &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                    bloodRequestRecord.getBankId(),</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_126'/>
+126
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_126'>1</a>
+<span>
+
+1. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Entity/BloodRequestRecord::getBloodType &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                    bloodRequestRecord.getBloodType()</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_127'/>
+127
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_127'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            );</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_128'/>
+128
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_128'>1</a>
+<span>
+
+1. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Entity/BloodRecord::getQuantity &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            long quantity = bloodRecord.getQuantity();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_129'/>
+129
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_129'>2</a>
+<span>
+
+1. acceptBloodRequest : Replaced long subtraction with addition &rarr; SURVIVED<br/>
+
+2. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Entity/BloodRequestRecord::getQuantity &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            quantity -= bloodRequestRecord.getQuantity();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_130'/>
+130
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_130'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_131'/>
+131
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_131'>1</a>
+<span>
+
+1. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Entity/BloodRecord::setQuantity &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            bloodRecord.setQuantity(quantity);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_132'/>
+132
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_132'>2</a>
+<span>
+
+1. acceptBloodRequest : removed call to com/dd/eraktkendrabackend/Repository/BloodRecordRepository::save &rarr; KILLED<br/>
+
+2. acceptBloodRequest : replaced call to com/dd/eraktkendrabackend/Repository/BloodRecordRepository::save with argument &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            bloodRecordRepository.save(bloodRecord);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_133'/>
+133
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_133'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_134'/>
+134
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_134'>1</a>
+<span>
+
+1. acceptBloodRequest : replaced boolean return with false for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::acceptBloodRequest &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_135'/>
+135
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_135'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>        } catch (Exception e) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_136'/>
+136
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_136'>1</a>
+<span>
+
+1. acceptBloodRequest : removed call to java/lang/Exception::printStackTrace &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>            e.printStackTrace();</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_137'/>
+137
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_137'>1</a>
+<span>
+
+1. acceptBloodRequest : replaced boolean return with true for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::acceptBloodRequest &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>            return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_138'/>
+138
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_138'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_139'/>
+139
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_139'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_140'/>
+140
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_140'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_141'/>
+141
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_141'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_142'/>
+142
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_142'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public List&#60;BloodRequestDTO&#62; getAllBloodRequests(long bankId) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_143'/>
+143
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_143'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        logger.info(&#34;Fieldworker requests all the bloodreqeust of that particular bank...&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_144'/>
+144
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_144'>1</a>
+<span>
+
+1. getAllBloodRequests : removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::findAllByBloodBank_BloodBankId &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        List&#60;BloodRequest&#62; bloodRequestList = bloodRequestRepository.findAllByBloodBank_BloodBankId(bankId);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_145'/>
+145
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_145'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_146'/>
+146
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_146'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;BloodRequestDTO&#62; bloodRequestDTOList = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_147'/>
+147
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_147'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for(BloodRequest bloodRequest: bloodRequestList) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_148'/>
+148
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_148'>1</a>
+<span>
+
+1. getAllBloodRequests : removed call to java/util/List::add &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            bloodRequestDTOList.add(new BloodRequestDTO(</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_149'/>
+149
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_149'>1</a>
+<span>
+
+1. getAllBloodRequests : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodRequestId &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                    bloodRequest.getBloodRequestId(),</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_150'/>
+150
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_150'>2</a>
+<span>
+
+1. getAllBloodRequests : removed call to com/dd/eraktkendrabackend/Entity/BloodBank::getBloodBankId &rarr; SURVIVED<br/>
+
+2. getAllBloodRequests : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodBank &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                    bloodRequest.getBloodBank().getBloodBankId(),</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_151'/>
+151
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_151'>1</a>
+<span>
+
+1. getAllBloodRequests : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodType &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                    bloodRequest.getBloodType(),</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_152'/>
+152
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_152'>2</a>
+<span>
+
+1. getAllBloodRequests : removed call to com/dd/eraktkendrabackend/Entity/User::getUserId &rarr; SURVIVED<br/>
+
+2. getAllBloodRequests : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getUser &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                    bloodRequest.getUser().getUserId(),</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_153'/>
+153
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_153'>1</a>
+<span>
+
+1. getAllBloodRequests : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getQuantity &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                    bloodRequest.getQuantity(),</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_154'/>
+154
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_154'>1</a>
+<span>
+
+1. getAllBloodRequests : removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getTotalCost &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                    bloodRequest.getTotalCost()</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_155'/>
+155
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_155'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            ));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_156'/>
+156
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_156'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_157'/>
+157
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_157'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_158'/>
+158
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_158'>1</a>
+<span>
+
+1. getAllBloodRequests : replaced return value with Collections.emptyList for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::getAllBloodRequests &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return bloodRequestDTOList;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_159'/>
+159
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_159'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1684f3ac_160'/>
+160
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_160'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_43'>43</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_43'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testBloodRequestByUser()]</span></span> removed call to com/dd/eraktkendrabackend/Service/BloodRecordService::getBloodRecord &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_44'>44</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_44'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getBloodBankId &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_46'>46</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_46'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getBloodBankId &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Long::valueOf &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testBloodRequestByUser()]</span></span> removed call to com/dd/eraktkendrabackend/Repository/BloodBankRepository::findById &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> removed call to java/util/Optional::get &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_48'>48</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_48'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testBloodRequestByUser()]</span></span> removed call to com/dd/eraktkendrabackend/Repository/UserRepository::findById &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> removed call to java/util/Optional::get &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testBloodRequestByUser7()]</span></span> removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getUserId &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Long::valueOf &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_54'>54</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_54'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testBloodRequestByUser3()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testBloodRequestByUser3()]</span></span> removed call to com/dd/eraktkendrabackend/DTO/BloodRecordDTO::getBloodType &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testBloodRequestByUser7()]</span></span> removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getBloodType &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> removed call to java/lang/String::equals &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_55'>55</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_55'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/DTO/BloodRecordDTO::getQuantity &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getQuantity &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_57'>57</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_57'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getQuantity &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> Replaced long multiplication with division &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/DTO/BloodRecordDTO::getCostPerUnit &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_61'>61</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_61'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getBloodType &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_62'>62</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_62'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/DTO/BloodRequestDTO::getQuantity &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_68'>68</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_68'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> replaced call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::save with argument &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::save &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_70'>70</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_70'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>none</span></span> replaced boolean return with false for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::bloodRequestByUser &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_74'>74</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_74'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>bloodRequestByUser<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testBloodRequestByUser()]</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::bloodRequestByUser &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_80'>80</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_80'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>checkBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testCheckBloodRequest()]</span></span> removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::findBloodRequestByUser_UserId &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_81'>81</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_81'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>checkBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testCheckBloodRequest()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_82'>82</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_82'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>checkBloodRequest<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::checkBloodRequest &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_83'>83</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_83'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>checkBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testCheckBloodRequest()]</span></span> replaced boolean return with false for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::checkBloodRequest &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_90'>90</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_90'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>revokeBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testRevokeBloodRequest()]</span></span> removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::findBloodRequestByUser_UserId &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_91'>91</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_91'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>revokeBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testRevokeBloodRequest()]</span></span> removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::delete &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_92'>92</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_92'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>revokeBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testRevokeBloodRequest()]</span></span> replaced boolean return with false for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::revokeBloodRequest &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_94'>94</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_94'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>revokeBloodRequest<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Exception::printStackTrace &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_95'>95</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_95'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>revokeBloodRequest<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::revokeBloodRequest &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_106'>106</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_106'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testAcceptBloodRequest()]</span></span> removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::findById &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testAcceptBloodRequest()]</span></span> removed call to java/util/Optional::get &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Long::valueOf &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_109'>109</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_109'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getUser &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_110'>110</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_110'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodType &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_111'>111</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_111'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getQuantity &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_112'>112</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_112'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getTotalCost &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_113'>113</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_113'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testAcceptBloodRequest()]</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodBank &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodBank::getBloodBankId &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_118'>118</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_118'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testAcceptBloodRequest()]</span></span> removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::delete &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_121'>121</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_121'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testAcceptBloodRequest()]</span></span> removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRecordRepository::save &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testAcceptBloodRequest()]</span></span> replaced call to com/dd/eraktkendrabackend/Repository/BloodRequestRecordRepository::save with argument &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_124'>124</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_124'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testAcceptBloodRequest()]</span></span> removed call to com/dd/eraktkendrabackend/Repository/BloodRecordRepository::findBloodRecordByBloodBank_BloodBankIdAndAndBloodType &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_125'>125</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_125'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequestRecord::getBankId &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_126'>126</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_126'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequestRecord::getBloodType &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_128'>128</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_128'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRecord::getQuantity &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_129'>129</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_129'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>none</span></span> Replaced long subtraction with addition &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequestRecord::getQuantity &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_131'>131</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_131'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRecord::setQuantity &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_132'>132</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_132'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testAcceptBloodRequest()]</span></span> removed call to com/dd/eraktkendrabackend/Repository/BloodRecordRepository::save &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testAcceptBloodRequest()]</span></span> replaced call to com/dd/eraktkendrabackend/Repository/BloodRecordRepository::save with argument &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_134'>134</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_134'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testAcceptBloodRequest()]</span></span> replaced boolean return with false for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::acceptBloodRequest &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_136'>136</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_136'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>none</span></span> removed call to java/lang/Exception::printStackTrace &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_137'>137</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_137'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>acceptBloodRequest<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::acceptBloodRequest &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_144'>144</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_144'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getAllBloodRequests<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests()]</span></span> removed call to com/dd/eraktkendrabackend/Repository/BloodRequestRepository::findAllByBloodBank_BloodBankId &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_148'>148</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_148'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getAllBloodRequests<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests2()]</span></span> removed call to java/util/List::add &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_149'>149</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_149'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getAllBloodRequests<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests3()]</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodRequestId &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_150'>150</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_150'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getAllBloodRequests<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodBank::getBloodBankId &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getAllBloodRequests<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests2()]</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodBank &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_151'>151</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_151'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getAllBloodRequests<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests3()]</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getBloodType &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_152'>152</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_152'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getAllBloodRequests<br/><b>Killed by : </b>none</span></span> removed call to com/dd/eraktkendrabackend/Entity/User::getUserId &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getAllBloodRequests<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests2()]</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getUser &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_153'>153</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_153'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getAllBloodRequests<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests3()]</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getQuantity &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_154'>154</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_154'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getAllBloodRequests<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests3()]</span></span> removed call to com/dd/eraktkendrabackend/Entity/BloodRequest::getTotalCost &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1684f3ac_158'>158</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1684f3ac_158'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getAllBloodRequests<br/><b>Killed by : </b>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests2()]</span></span> replaced return value with Collections.emptyList for com/dd/eraktkendrabackend/Service/ServiceImpl/BloodRequestServiceImpl::getAllBloodRequests &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>EXPERIMENTAL_ARGUMENT_PROPAGATION</li>
+
+<li class='mutator'>EXPERIMENTAL_NAKED_RECEIVER</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NON_VOID_METHOD_CALLS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testAcceptBloodRequest()] (15 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testBloodRequestByUser()] (8 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testBloodRequestByUser3()] (13 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testBloodRequestByUser7()] (21 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testBloodRequestByUser6()] (45 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests()] (5 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests2()] (5 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testGetAllBloodRequests3()] (65 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testCheckBloodRequest()] (5 ms)</li><li>com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest.[engine:junit-jupiter]/[class:com.dd.eraktkendrabackend.Service.ServiceImpl.BloodRequestServiceImplTest]/[method:testRevokeBloodRequest()] (8 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.15.3
+
+</body>
+</html>
